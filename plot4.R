@@ -19,7 +19,7 @@ plot(d1$DateTime,d1$Voltage,type="l",xlab="datetime",ylab="Voltage")
 plot(d1$DateTime,d1$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering",col="black")
 lines(d1$DateTime,d1$Sub_metering_2,col="red")
 lines(d1$DateTime,d1$Sub_metering_3,col="blue")
-legend("topright", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), border="white",lty=c(1,1,1), lwd=c(2.5,2.5,2.5),col=c("black","red","blue"))
+legend("topright", bty = "n",cex=0.4,legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),lty=c(1,1,1), lwd=c(2.5,2.5,2.5),col=c("black","red","blue"))
 #4.4
 plot(d1$DateTime,d1$Global_reactive_power,type="l",xlab="datetime",ylab="Global_reactive_power")
 #png
